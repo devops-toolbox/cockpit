@@ -1,0 +1,7 @@
+---
+# Install cockpit packages
+- name: packages are installed
+  package:
+    name: "{{ cockpit_packages_install }}"
+    state: present
+  become: true

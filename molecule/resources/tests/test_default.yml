@@ -1,0 +1,9 @@
+# Molecule managed
+---
+package:
+  cockpit:
+    installed: true
+service:
+  cockpit.socket:
+    enabled: true
+    running: true

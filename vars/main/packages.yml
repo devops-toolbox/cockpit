@@ -1,0 +1,29 @@
+---
+# Install packages
+_cockpit_packages_install:
+  all: []
+  CentOS_7:
+    - cockpit
+    - cockpit-system
+    - cockpit-packagekit
+    - cockpit-machines
+  RedHat_7:
+    - cockpit
+    - cockpit-system
+    - cockpit-packagekit
+    - cockpit-machines
+  CentOS_8:
+    - cockpit
+    - cockpit-system
+    - cockpit-packagekit
+    - cockpit-machines
+  RedHat_8:
+    - cockpit
+    - cockpit-system
+    - cockpit-packagekit
+    - cockpit-machines
+  Fedora_31:
+    - cockpit
+    - cockpit-system
+    - cockpit-packagekit
+    - cockpit-machines

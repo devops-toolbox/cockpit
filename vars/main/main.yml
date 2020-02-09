@@ -1,0 +1,18 @@
+---
+# vars file for packages
+
+# Detected OS
+my_os: "{{ ansible_distribution }}_{{ ansible_distribution_major_version }}"
+
+# Services Enable
+cockpit_services_enable: "{{ _cockpit_services_enable['all']
+  | union ( _cockpit_services_enable[my_os]
+  | default([]) ) }}"
+
+# Packages lists
+cockpit_packages_repos: "{{ _cockpit_packages_repos['all']
+  | union ( _cockpit_packages_repos[my_os]
+  | default([]) ) }}"
+cockpit_packages_install: "{{ _cockpit_packages_install['all']
+  | union ( _cockpit_packages_install[my_os]
+  | default([]) ) }}"
