@@ -8,10 +8,10 @@ cockpit
 Ansible Galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.cockpit](https://galaxy.ansible.com/devops-toolbox.cockpit)
+[https://galaxy.ansible.com/devopstoolbox.cockpit](https://galaxy.ansible.com/devopstoolbox.cockpit)
 
 ```bash
-ansible-galaxy install devops-toolbox.cockpit
+ansible-galaxy install devopstoolbox.cockpit
 ```
 
 Requirements
@@ -47,7 +47,7 @@ Example Playbook
   tasks:
     - name: cockpit is configured
       import_role:
-        name: devops-toolbox.cockpit
+        name: devopstoolbox.cockpit
       vars:
         cockpit_enable_service: true
         cockpit_firewall_configure: true
@@ -64,4 +64,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
